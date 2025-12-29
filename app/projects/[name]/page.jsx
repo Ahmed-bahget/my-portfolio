@@ -54,9 +54,9 @@ export default function ProjectDetails({ params }) {
               <Link
                 href={project.demoLink}
                 target="_blank"
-                className="sm:px-6 sm:py-2 p-3 hover:bg-gray-950 bg-black text-white rounded-lg hover:opacity-80 flex items-center text-center gap-2"
+                className="sm:px-6 sm:py-2 py-2 px-3 hover:bg-gray-950 bg-black text-white rounded-lg hover:opacity-80 flex items-center text-center gap-2"
               >
-                Live Demo
+                Demo
                 <LucideSquareArrowOutUpRight className="w-4" />
               </Link>
             )}
@@ -64,9 +64,9 @@ export default function ProjectDetails({ params }) {
             <Link
               href={project.repoLink}
               target="_blank"
-              className="px-6 py-2 border rounded-lg hover:bg-gray-100 flex items-center text-center gap-2"
+              className="sm:px-6 sm:py-2 py-2 px-3 border rounded-lg hover:bg-gray-100 flex items-center text-center gap-2"
             >
-              GitHub Repo
+              GitHub
               <LucideSquareArrowOutUpRight className="w-4" />
 
             </Link>
