@@ -22,7 +22,7 @@ export const Footer = () => {
                     />
                     <a
                         target="_blank"
-                        href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                        href="mailto:ahedbahget70@gmail.com"
                         className="break-all sm:break-normal"
                     >
                         ahedbahget70@gmail.com

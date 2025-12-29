@@ -96,7 +96,7 @@ const Headers = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: .6, delay: 1.2 }}
                     target='_blank'
-                    href='https://docs.google.com/document/d/1Ic09QxlNiy7PXYgB1cOmIjW0YBdguc0AxKmOBYMTJdM/edit?tab=t.0#heading=h.gjdgxs'
+                    href='https://docs.google.com/document/d/1HglXfSJTxICX9A1mdhNdK3MYnV-jYJvfmMEFgDvcxFY/edit?tab=t.0#heading=h.f0nuwjoe9axz'
                     className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>
                     My resume
                 </motion.a>
