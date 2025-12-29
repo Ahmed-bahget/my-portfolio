@@ -32,8 +32,9 @@ const Navbar = () => {
       </div>
 
       <nav
-        className={`${isScroll ? 'md:bg-[#ffffff60] backdrop-blur-lg shadow-sm' : ''} 
-        fixed top-4  w-full z-50 flex items-center justify-between px-5 lg:px-10 xl:px-[8%]`}
+        className={`${isScroll ? 'bg-[#ffffff60] backdrop-blur-lg shadow-sm' : ''} 
+        fixed top-2 sm:top-4 w-full z-50 flex items-center justify-between
+        px-4 sm:px-5 lg:px-10 xl:px-[8%]`}
       >
         {/* Logo */}
         <Link href="/" className="font-ovo text-2xl font-semibold text-[#21033cf5]">
@@ -88,26 +89,65 @@ const Navbar = () => {
           )}
         </div>
 
-
         {/* Mobile menu button */}
         <button onClick={() => setOpenMenu(true)} className="block md:hidden">
           <Menu size={24} className="w-6" />
         </button>
-
-        {/* Mobile menu */}
         <ul
-          className={`fixed top-0 right-0 h-screen w-64 bg-rose-50 z-50 p-10 transition-transform duration-500
-          ${openMenu ? 'translate-x-0' : 'translate-x-full'}`}
+          className={`fixed top-0 right-0 h-5/12 sm:h-screen w-5/8 sm:w-64 z-50
+    p-6 sm:p-8 rounded-l-2xl shadow-xl transition-transform duration-500
+    ${openMenu ? 'translate-x-0' : 'translate-x-full'}`}
+          style={{
+            backgroundColor: '#f3f4f6 !important',
+            background: '#f3f4f6'
+          }}
         >
-          <button onClick={() => setOpenMenu(false)} className="absolute top-6 right-6">
-            <X size={20} className="w-5" />
+          {/* Close Button */}
+          <button
+            onClick={() => setOpenMenu(false)}
+            className="absolute top-4 right-4 sm:top-6 sm:right-6 p-2 rounded-full hover:bg-gray-400 transition"
+            style={{ backgroundColor: 'transparent' }}
+          >
+            <X size={20} className="text-gray-800" />
           </button>
 
-          <li><Link onClick={() => setOpenMenu(false)} href={link("#top")}>Home</Link></li>
-          <li><Link onClick={() => setOpenMenu(false)} href={link("#about")}>About Me</Link></li>
-          {/* <li><Link onClick={() => setOpenMenu(false)} href={link("#services")}>Services</Link></li> */}
-          <li><Link onClick={() => setOpenMenu(false)} href={link("#work")}>My Work</Link></li>
-          <li><Link onClick={() => setOpenMenu(false)} href={link("#contact")}>Contact Me</Link></li>
+          {/* Menu Items */}
+          <li className="mt-6 sm:mt-8">
+            <Link
+              onClick={() => setOpenMenu(false)}
+              href={link("#top")}
+              className="block py-2 px-4 rounded-lg hover:bg-gray-300 transition text-lg font-semibold text-gray-800"
+            >
+              Home
+            </Link>
+          </li>
+          <li className="mt-2 sm:mt-4">
+            <Link
+              onClick={() => setOpenMenu(false)}
+              href={link("#about")}
+              className="block py-2 px-4 rounded-lg hover:bg-gray-300 transition text-lg font-semibold text-gray-800"
+            >
+              About Me
+            </Link>
+          </li>
+          <li className="mt-2 sm:mt-4">
+            <Link
+              onClick={() => setOpenMenu(false)}
+              href="/projects"
+              className="block py-2 px-4 rounded-lg hover:bg-gray-300 transition text-lg font-semibold text-gray-800"
+            >
+              My Works
+            </Link>
+          </li>
+          <li className="mt-2 sm:mt-4">
+            <Link
+              onClick={() => setOpenMenu(false)}
+              href={link("#contact")}
+              className="block py-2 px-4 rounded-lg hover:bg-gray-300 transition text-lg font-semibold text-gray-800"
+            >
+              Contact Me
+            </Link>
+          </li>
         </ul>
       </nav>
     </>

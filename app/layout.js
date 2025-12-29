@@ -38,13 +38,13 @@ export const metadata = {
   authors: [{ name: "Ahmed Bahget" }],
   creator: "Ahmed Bahget",
 
-  metadataBase: new URL("https://github.com/Ahmed-bahget/my-portfolio"),
+  metadataBase: new URL("https://my-portfolio-seven-beta-nhm0z5sij9.vercel.app/"),
 
   openGraph: {
     title: "Ahmed Bahget | Full Stack MERN Developer",
     description:
       "Portfolio of Ahmed Bahget – Full Stack MERN Developer building scalable web applications.",
-    url: "https://github.com/Ahmed-bahget/my-portfolio",
+    url: "https://my-portfolio-seven-beta-nhm0z5sij9.vercel.app/",
     siteName: "Ahmed Bahget Portfolio",
     images: [
       {

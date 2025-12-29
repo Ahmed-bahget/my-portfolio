@@ -42,7 +42,7 @@ export const Footer = () => {
                             href="https://www.linkedin.com/in/ahmed-bahget-50747a198/"
                             className="hover:underline hover:text-blue-500 flex gap-1"
                         >
-                            <Linkedin className='w-4'/>
+                            <Linkedin className='w-4' />
                             : LinkedIn
                         </a>
                     </li>
@@ -52,7 +52,7 @@ export const Footer = () => {
                             href="https://github.com/Ahmed-bahget/"
                             className="hover:underline hover:text-blue-500 flex gap-1"
                         >
-                            <Github className='w-4'/>
+                            <Github className='w-4' />
                             : Github
                         </a>
                     </li>

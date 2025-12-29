@@ -1,9 +1,7 @@
 "use client"
 import { assets, workData, projects } from '../../assets/assets'
-import Image from 'next/image'
 import { motion } from 'motion/react'
 import { Send, ArrowRight } from 'lucide-react'
-import Link from 'next/link'
 
 const getProjectSlugByTitle = (title) => {
     const project = projects.find(p => p.title === title);
@@ -13,56 +11,71 @@ const getProjectSlugByTitle = (title) => {
 const Work = () => {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-
-            id='work' className='max-w-6xl mx-auto'>
-            <div className='flex flex-col gap-3 items-center my-5'>
-                <h4 className='font-ovo text-lg'>My Portfolio</h4>
-                <h1 className='font-ovo text-5xl font-bold'>
-                    My Latest Work</h1>
-                <p className='font-ovo max-w-2xl mx-auto text-md text-gray-500'>
-                    these are my projects which i take experiences while do it</p>
+            transition={{ duration: 0.8, delay: 0.3 }}
+            id='work'
+            className='max-w-6xl mx-auto px-4'
+        >
+            {/* Header */}
+            <div className='flex flex-col gap-2 items-center my-4 text-center'>
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ delay: 0.2 }}
+                    className='text-sm sm:text-base font-semibold uppercase tracking-wide text-gray-600'
+                >
+                    My experience
+                </motion.p>
+                <motion.h1
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 }}
+                    className='text-4xl sm:text-5xl lg:text-6xl font-ovo font-extrabold mb-4 sm:mb-5 mt-2 text-gray-900'
+                >
+                    My Works
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                    className='text-lg sm:text-xl leading-relaxed font-ovo max-w-2xl mx-auto text-center text-md text-gray-500'
+                >
+                    These are my projects which I gained experience while doing.
+                </motion.p>
             </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-12">
+            {/* Project Cards */}
+            <div className="flex flex-col gap-6 my-8 lg:flex-row">
                 {workData.slice(0, 3).map(({ title, description, bgImage }, index) => (
                     <a
                         key={index}
                         href={`/projects/${getProjectSlugByTitle(title)}`}
-                        className="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl border border-gray-200 transition"
+                        className="group rounded-xl overflow-hidden shadow-md hover:shadow-lg border border-gray-200 transition lg:flex-1"
                     >
                         <div
                             style={{ backgroundImage: `url(${bgImage})` }}
-                            className="aspect-[4/3] min-h-[280px] lg:min-h-[340px]
-                   bg-no-repeat bg-cover bg-center relative
-                   group-hover:scale-105 transition duration-500"
+                            className="aspect-[4/3] min-h-[200px] sm:min-h-[220px] lg:min-h-[280px] bg-no-repeat bg-cover bg-center relative group-hover:scale-105 transition duration-500"
                         >
-                            <div className="bg-black/80 text-white w-full p-6 absolute bottom-0 left-0
-                        transition duration-500 flex justify-between items-end">
+                            <div className="bg-black/70 text-white w-full p-4 absolute bottom-0 left-0 flex justify-between items-end">
                                 <div>
-                                    <h1 className="font-semibold text-2xl">{title}</h1>
-                                    <p className="text-sm text-gray-300">{description}</p>
+                                    <h1 className="text-xl sm:text-2xl font-semibold text-gray-900">{title}</h1>
+                                    <p className="text-sm sm:text-base text-gray-300">{description}</p>
                                 </div>
-
-                                <div className="w-10 aspect-square flex items-center justify-center
-                          border border-white/30 rounded-full
-                          hover:bg-gray-700 transition">
-                                    <Send size={20} className="text-white" />
+                                <div className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-white/30 rounded-full hover:bg-gray-700 transition">
+                                    <Send size={16} className="text-white" />
                                 </div>
                             </div>
                         </div>
                     </a>
                 ))}
             </div>
-
-
-            <a href='/projects' className='flex mx-auto gap-2 text-gray-700 w-max
-            px-7 py-2 border-[0.5px] border-gray-700 rounded-full items-center 
-            justify-center hover:bg-gray-200 my-15 duration-500'>
+            {/* Show More Button */}
+            <a
+                href='/projects'
+                className='flex mx-auto gap-2 text-gray-700 w-max px-4 py-2 sm:px-5 sm:py-2.5 border border-gray-700 rounded-full items-center justify-center hover:bg-gray-200 transition duration-300 text-sm sm:text-base'
+            >
                 Show More
-                <ArrowRight size={16} className='w-4 items-center' />
+                <ArrowRight size={16} />
             </a>
         </motion.div>
     )

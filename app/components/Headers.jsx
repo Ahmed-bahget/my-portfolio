@@ -47,8 +47,7 @@ const Headers = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
-
-                className='max-w-2xl mx-auto font-ovo'>
+                className='font-ovo max-w-2xl mx-auto text-center text-md text-gray-500'>
                 Full Stack / Backend Developer with expertise in Node.js, Express.js, React.js, Next.js, and modern web technologies.
             </motion.p>
             <div className="flex items-center gap-6 mt-6">
@@ -90,7 +89,7 @@ const Headers = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: .6, delay: 1 }}
                     href='#contact' className='px-10 py-3 border rounded-full border-white bg-black text-white flex items-center gap-2'>Contact Me
-                    <ArrowRight className='w-4'/>
+                    <ArrowRight className='w-4' />
                 </motion.a>
                 <motion.a
                     initial={{ opacity: 0, y: -20 }}
@@ -99,7 +98,7 @@ const Headers = () => {
                     target='_blank'
                     href='https://docs.google.com/document/d/1Ic09QxlNiy7PXYgB1cOmIjW0YBdguc0AxKmOBYMTJdM/edit?tab=t.0#heading=h.gjdgxs'
                     className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>
-                        My resume
+                    My resume
                 </motion.a>
             </div>
         </div>

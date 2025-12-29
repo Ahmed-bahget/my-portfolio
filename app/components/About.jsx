@@ -65,7 +65,7 @@ const About = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-sm sm:text-base font-semibold uppercase tracking-wide mb-2 text-gray-600"
+            className="text-sm sm:text-base font-semibold uppercase tracking-wide mb-2 mt-10 sm:mt-0 text-gray-600"
           >
             Introduction
           </motion.p>
@@ -86,11 +86,10 @@ const About = () => {
           transition={{ delay: 0.4 }}
           className="max-w-3xl mx-auto mb-16"
         >
-          <p className="text-lg sm:text-xl leading-relaxed text-gray-700 text-center">
+          <p className="text-lg sm:text-xl leading-relaxed font-ovo max-w-2xl mx-auto text-center text-md text-gray-500">
             I'm a fullstack developer with experience in Node.js, MongoDB, React.js, Redux, and Next.js. I build secure, maintainable, and scalable applications with modern web technologies.
           </p>
         </motion.div>
-
         {/* Info Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {infoList.map(({ icon: Icon, title, items }, idx) => (
@@ -111,7 +110,6 @@ const About = () => {
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900">{title}</h3>
               </div>
-
               {/* Content */}
               <div className="flex-1 overflow-y-auto">
                 <ul className="space-y-2">
@@ -125,7 +123,6 @@ const About = () => {
             </motion.div>
           ))}
         </div>
-
         {/* Tools Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -137,7 +134,6 @@ const About = () => {
           <h4 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center lg:text-left">
             Tools I Use
           </h4>
-
           <div className="flex flex-wrap justify-center lg:justify-start gap-6">
             {tools.map(({ icon, name }, idx) => (
               <motion.div
