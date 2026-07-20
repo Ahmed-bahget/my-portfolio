@@ -48,8 +48,7 @@ const Headers = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
                 className='font-ovo max-w-2xl mx-auto text-center text-md text-gray-500'>
-                Full Stack / Backend Developer with expertise in Node.js, Express.js, React.js, Next.js, and modern web technologies.
-            </motion.p>
+                Full Stack Developer specializing in designing secure, scalable, and maintainable web applications with Node.js, NestJS, React, and Next.js. Experienced in building RESTful APIs, designing relational databases, implementing authentication and RBAC, optimizing query performance, and applying clean architecture principles. Familiar with scaling monolithic applications through caching, load balancing, horizontal scaling, asynchronous processing, and database optimization, with the ability to evolve systems into microservices as business needs grow.            </motion.p>
             <div className="flex items-center gap-6 mt-6">
                 <motion.a
                     initial={{ opacity: 0 }}
