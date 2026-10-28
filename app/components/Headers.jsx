@@ -18,8 +18,7 @@ const Headers = () => {
                     transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                     className='relative'
                 >
-                    <div className='absolute -inset-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-30 animate-pulse'></div>
-                    <Image className='relative rounded-full w-40 sm:w-48 md:w-56 shadow-2xl' alt='Ahmed Bahget' src={assets.ahmed_image} />
+                    <Image className='rounded-full w-40 sm:w-48 md:w-56 shadow-2xl' alt='Ahmed Bahget' src={assets.ahmed_image} />
                 </motion.div>
             </motion.div>
             <motion.h3
