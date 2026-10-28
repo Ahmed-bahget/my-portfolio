@@ -21,19 +21,21 @@ const eczar = Eczar({
 
 export const metadata = {
   title: {
-    default: "Ahmed Bahget | Full Stack MERN Developer",
+    default: "Ahmed Bahget | Software Engineer",
     template: "%s | Ahmed Bahget",
   },
   description:
-    "Ahmed Bahget is a Full Stack MERN Developer specializing in React, Next.js, Node.js, Express, MongoDB, and scalable backend systems.",
+    "Ahmed Bahget is a Software Engineer with a system design and architecture mindset, building scalable, secure, and maintainable software with NestJS, Node.js, React, and Next.js.",
   keywords: [
     "Ahmed Bahget",
+    "Software Engineer",
+    "Backend Developer",
     "Full Stack Developer",
-    "MERN Stack Developer",
+    "NestJS Developer",
     "Next.js Portfolio",
     "React Developer",
     "Node.js Developer",
-    "Backend Engineer",
+    "System Design",
   ],
   authors: [{ name: "Ahmed Bahget" }],
   creator: "Ahmed Bahget",
@@ -41,9 +43,9 @@ export const metadata = {
   metadataBase: new URL("https://my-portfolio-seven-beta-nhm0z5sij9.vercel.app/"),
 
   openGraph: {
-    title: "Ahmed Bahget | Full Stack MERN Developer",
+    title: "Ahmed Bahget | Software Engineer",
     description:
-      "Portfolio of Ahmed Bahget – Full Stack MERN Developer building scalable web applications.",
+      "Portfolio of Ahmed Bahget – Software Engineer building scalable, secure, and maintainable software systems.",
     url: "https://my-portfolio-seven-beta-nhm0z5sij9.vercel.app/",
     siteName: "Ahmed Bahget Portfolio",
     images: [
@@ -59,10 +61,10 @@ export const metadata = {
   },
 
   twitter: {
-    card: "ahmed_image",
-    title: "Ahmed Bahget | Full Stack MERN Developer",
+    card: "summary_large_image",
+    title: "Ahmed Bahget | Software Engineer",
     description:
-      "Portfolio of Ahmed Bahget – MERN Stack & Next.js Developer.",
+      "Portfolio of Ahmed Bahget – Software Engineer building scalable, secure, and maintainable software systems.",
     images: ["/ahmed-img.png"],
   },
 

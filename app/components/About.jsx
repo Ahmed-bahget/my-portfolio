@@ -232,7 +232,7 @@
 // export default About
 "use client"
 
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import { Code, Briefcase, ChevronDown, ChevronUp } from 'lucide-react'
 import React, { useState } from 'react'
 
