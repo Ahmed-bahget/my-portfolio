@@ -32,9 +32,13 @@ const Navbar = () => {
       </div>
 
       <nav
-        className={`${isScroll ? 'bg-[#ffffff60] backdrop-blur-lg shadow-sm' : ''} 
-        fixed top-2 sm:top-4 w-full z-50 flex items-center justify-between
-        px-4 sm:px-5 lg:px-10 xl:px-[8%]`}
+        className={`${
+          isScroll 
+            ? 'bg-white/70 backdrop-blur-xl shadow-md border-b border-gray-200/50' 
+            : 'bg-white/40 backdrop-blur-md'
+        } 
+        fixed top-0 w-full z-50 flex items-center justify-between
+        px-4 sm:px-5 lg:px-10 xl:px-[8%] py-2 sm:py-3 transition-all duration-300`}
       >
         {/* Logo */}
         <Link href="/" className="font-ovo text-2xl font-semibold text-[#21033cf5]">

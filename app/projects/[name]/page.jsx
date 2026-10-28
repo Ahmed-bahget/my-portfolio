@@ -6,10 +6,11 @@ import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ChevronLeft, ChevronRight, LucideSquareArrowOutUpRight } from 'lucide-react'
-import { useState } from 'react'
+import { useState, use } from 'react'
 
 export default function ProjectDetails({ params }) {
-  const projectSlug = params?.name;
+  const resolvedParams = use(params);
+  const projectSlug = resolvedParams?.name;
 
   const project = projects.find(p => p.slug === projectSlug)
   if (!project) return notFound()
