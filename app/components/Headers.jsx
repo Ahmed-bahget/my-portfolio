@@ -2,7 +2,7 @@
 import { assets } from '../../assets/assets';
 import Image from 'next/image';
 import { motion } from "motion/react";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Github, Linkedin } from 'lucide-react';
 
 const Headers = () => {
     return (
@@ -74,13 +74,10 @@ const Headers = () => {
                     href="https://www.linkedin.com/in/ahmed-bahget-50747a198/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition"
+                    aria-label="LinkedIn"
+                    className="flex h-9 w-9 items-center justify-center text-gray-900 transition"
                 >
-                    <Image
-                        src={assets.linkedin_icon}
-                        alt="LinkedIn"
-                        className="w-8"
-                    />
+                    <Linkedin size={30} />
                 </motion.a>
 
                 <motion.a
@@ -89,13 +86,10 @@ const Headers = () => {
                     href="https://github.com/Ahmed-bahget/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition"
+                    aria-label="GitHub"
+                    className="flex h-9 w-9 items-center justify-center text-gray-900 transition"
                 >
-                    <Image
-                        src={assets.github_icon}
-                        alt="GitHub"
-                        className="w-14"
-                    />
+                    <Github size={30} />
                 </motion.a>
             </motion.div>
             <motion.div
