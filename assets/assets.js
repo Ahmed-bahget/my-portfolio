@@ -41,16 +41,19 @@ export const workData = [
     title: 'Job Portal',
     description: 'MERN Job Portal App',
     bgImage: '/jobportal.png',
+    slug: 'job-portal',
   },
   {
     title: 'Socially',
     description: 'Fullstack Social Media App',
     bgImage: '/socially.png',
+    slug: 'socially',
   },
   {
     title: 'ZWEB Backend',
     description: 'Backend REST API',
     bgImage: '/zweb.png',
+    slug: 'zweb-backend',
   },
   {
     title: 'Events Sharing App',

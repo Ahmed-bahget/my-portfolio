@@ -1,12 +1,7 @@
 "use client"
-import { assets, workData, projects } from '../../assets/assets'
+import { assets, workData } from '../../assets/assets'
 import { motion } from 'motion/react'
 import { Send, ArrowRight } from 'lucide-react'
-
-const getProjectSlugByTitle = (title) => {
-    const project = projects.find(p => p.title === title);
-    return project ? project.slug : '#';
-};
 
 const Work = () => {
     return (
@@ -41,15 +36,15 @@ const Work = () => {
                     transition={{ delay: 0.4 }}
                     className='text-lg sm:text-xl leading-relaxed font-ovo max-w-2xl mx-auto text-center text-md text-gray-500'
                 >
-                    These are my projects which I gained experience while doing.
+                    Selected projects.
                 </motion.p>
             </div>
             {/* Project Cards */}
             <div className="flex flex-col gap-6 my-8 lg:flex-row">
-                {workData.slice(0, 3).map(({ title, description, bgImage }, index) => (
+                {workData.slice(0, 3).map(({ title, description, bgImage, slug }, index) => (
                     <a
                         key={index}
-                        href={`/projects/${getProjectSlugByTitle(title)}`}
+                        href={`/projects/${slug}`}
                         className="group rounded-xl overflow-hidden shadow-md hover:shadow-lg border border-gray-200 transition lg:flex-1"
                     >
                         <div

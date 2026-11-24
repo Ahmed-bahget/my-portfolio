@@ -5,7 +5,7 @@ import { projects } from "../../../assets/assets"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ChevronLeft, ChevronRight, LucideSquareArrowOutUpRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, LucideSquareArrowOutUpRight, Play } from 'lucide-react'
 import { useState, use } from 'react'
 
 export default function ProjectDetails({ params }) {
@@ -16,6 +16,7 @@ export default function ProjectDetails({ params }) {
   if (!project) return notFound()
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showVideo, setShowVideo] = useState(false);
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -129,22 +130,41 @@ export default function ProjectDetails({ params }) {
             )}
           </div>
         ) : null}
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Video Demo</h2>
-          {project.videoLink ? (
+        {project.videoLink && (
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold mb-4">Video Demo</h2>
             <div className="relative aspect-video max-w-2xl mx-auto rounded-xl shadow overflow-hidden">
-              <iframe
-                src={project.videoLink}
-                className="w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title={`${project.title} Video Demo`}
-              />
+              {showVideo ? (
+                <iframe
+                  src={project.videoLink}
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title={`${project.title} Video Demo`}
+                />
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => setShowVideo(true)}
+                  className="group relative block w-full h-full"
+                  aria-label={`Play ${project.title} video demo`}
+                >
+                  <Image
+                    src={project.coverImage}
+                    alt={`${project.title} video thumbnail`}
+                    fill
+                    className="object-cover"
+                  />
+                  <span className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition flex items-center justify-center">
+                    <span className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center group-hover:scale-110 transition">
+                      <Play className="w-8 h-8 text-gray-900 ml-1" fill="currentColor" />
+                    </span>
+                  </span>
+                </button>
+              )}
             </div>
-          ) : (
-            <p className="text-gray-500 italic">No video demo available.</p>
-          )}
-        </div>
+          </div>
+        )}
 
         {/* Features */}
         <div className="mb-12">

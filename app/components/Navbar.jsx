@@ -77,7 +77,7 @@ const Navbar = () => {
 
           <li>
             <Link href="/projects" className="transition hover:text-purple-700">
-              My Works
+              Projects
             </Link>
           </li>
 
@@ -213,7 +213,7 @@ const Navbar = () => {
               tabIndex={openMenu ? 0 : -1}
               className="block rounded-lg px-4 py-3 text-lg font-semibold text-gray-800 transition hover:bg-gray-300/50"
             >
-              My Works
+              Projects
             </Link>
           </li>
 

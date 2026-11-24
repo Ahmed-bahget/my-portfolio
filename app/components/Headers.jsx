@@ -51,16 +51,24 @@ const Headers = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: .8, delay: .6 }}
                 viewport={{ once: true }}
-                className='text-3xl sm:text-6xl lg:text-[66px] font-ovo text-gray-900'>
-                Software Engineer
+                className='text-3xl sm:text-5xl lg:text-6xl font-ovo text-gray-900'>
+                Backend Engineer | NestJS - TypeScript - PostgreSQL
             </motion.h1>
+            <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                viewport={{ once: true }}
+                className='font-ovo text-base sm:text-lg text-gray-800'>
+                I build backends that hold up under load: booking platform serving 500 concurrent users at sub-100ms.
+            </motion.p>
             <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
                 viewport={{ once: true }}
                 className='font-ovo max-w-2xl mx-auto text-center text-md sm:text-lg text-gray-600 leading-relaxed'>
-                Software Engineer with a system design and architecture mindset, building scalable, secure, and maintainable software. Experienced in designing layered architectures, modeling relational schemas, making deliberate trade-offs between storage and computation, and structuring authentication, authorization, and multi-tenant systems around clear boundaries.            </motion.p>
+                Backend engineer with a system design and architecture mindset, building scalable, secure, and maintainable software.            </motion.p>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

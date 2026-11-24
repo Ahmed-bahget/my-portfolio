@@ -250,9 +250,22 @@ const skillsData = {
 
 const experienceData = [
   {
+    role: "Software Engineer (Backend)",
+    company: "Multi-Tenant Point of Sale (POS) Platform",
+    location: "Remote",
+    period: "Feb 2026 - Nov 2026",
+    responsibilities: [
+      "Re-architected a single-merchant modular monolith POS backend for multi-tenant operation, rebuilding the data layer and authorization guards around strict tenant-level isolation.",
+      "Modeled PostgreSQL schemas with Prisma for products, barcode indexing, ledger-based stock adjustments, multi-cart sessions, and transactional invoicing.",
+      "Implemented JWT authentication with tenant-scoped RBAC guards and documented all REST endpoints with Swagger.",
+      "Load-tested high-concurrency cart and checkout flows with Grafana k6, cutting endpoint latency from 1,179ms to under 15ms.",
+    ],
+  },
+  {
     role: "Software Engineer (Backend Developer)",
     company: "Pitches Booking Startup (Yalla Play)",
     location: "Remote",
+    period: "Jun 2025 - Jan 2026",
     responsibilities: [
       "Architected the backend of a booking platform built to scale to 500+ concurrent users, using NestJS with a layered Controller-Service-Repository structure to isolate transport, business logic, and data access.",
       "Designed the PostgreSQL schema from scratch (users, pitches, schedules, bookings, payments) with normalization and indexing aligned to access patterns, using Prisma ORM on Neon cloud.",
@@ -353,7 +366,7 @@ const ExperienceCard = () => {
               {exp.role}
             </h4>
             <p className="text-sm text-gray-500 mb-4">
-              {exp.company} | {exp.location}
+              {exp.company} | {exp.location} | {exp.period}
             </p>
             <ul className={`list-disc pl-5 space-y-2 transition-all duration-300 ${isExpanded ? 'max-h-full' : 'max-h-48 overflow-hidden'}`}>
               {exp.responsibilities.map((item, idx) => (

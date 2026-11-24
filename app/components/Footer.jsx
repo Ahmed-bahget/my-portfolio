@@ -32,7 +32,7 @@ export const Footer = () => {
 
             <div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-4 border-t border-gray-300 py-6 text-sm sm:text-base">
                 <p className="text-center sm:text-left">
-                    ©2025 Ahmed Bahget. All rights reserved.
+                    ©{new Date().getFullYear()} Ahmed Bahget. All rights reserved.
                 </p>
 
                 <ul className="flex items-center gap-6 sm:gap-10">
@@ -43,7 +43,7 @@ export const Footer = () => {
                             className="hover:underline hover:text-blue-500 flex gap-1"
                         >
                             <Linkedin className='w-4' />
-                            : LinkedIn
+                            LinkedIn
                         </a>
                     </li>
                     <li className="font-ovo">
@@ -53,7 +53,7 @@ export const Footer = () => {
                             className="hover:underline hover:text-blue-500 flex gap-1"
                         >
                             <Github className='w-4' />
-                            : Github
+                            GitHub
                         </a>
                     </li>
                 </ul>
