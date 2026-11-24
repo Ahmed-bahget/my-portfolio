@@ -60,7 +60,7 @@ const Headers = () => {
                 transition={{ duration: 0.6, delay: 0.75 }}
                 viewport={{ once: true }}
                 className='font-ovo text-base sm:text-lg text-gray-800'>
-                I build backends that hold up under load: booking platform serving 500 concurrent users at sub-100ms.
+                Systems I build hold up under load: a booking platform serving 500 concurrent users at sub-100ms.
             </motion.p>
             <motion.p
                 initial={{ opacity: 0, y: 20 }}
