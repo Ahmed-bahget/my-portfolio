@@ -57,18 +57,10 @@ const Headers = () => {
             <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.75 }}
-                viewport={{ once: true }}
-                className='font-ovo text-base sm:text-lg text-gray-800'>
-                Systems I build hold up under load: a booking platform serving 500 concurrent users at sub-100ms.
-            </motion.p>
-            <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
                 viewport={{ once: true }}
                 className='font-ovo max-w-2xl mx-auto text-center text-md sm:text-lg text-gray-600 leading-relaxed'>
-                Software developer building production systems end to end, from scalable backends and PostgreSQL schemas to React frontends, with clean architecture and performance at the core.            </motion.p>
+                I build professional software with care: scalable, reliable, and secure by design.            </motion.p>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
