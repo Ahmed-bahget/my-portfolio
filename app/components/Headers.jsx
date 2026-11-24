@@ -118,7 +118,7 @@ const Headers = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     target='_blank'
-                    href='https://docs.google.com/document/d/1HglXfSJTxICX9A1mdhNdK3MYnV-jYJvfmMEFgDvcxFY/edit?tab=t.0#heading=h.f0nuwjoe9axz'
+                    href='/Ahmed-Bahget-Software-Developer.pdf'
                     className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 hover:bg-gray-50 transition'
                 >
                     My resume
