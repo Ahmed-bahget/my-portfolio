@@ -14,7 +14,7 @@ const Services = () => {
             <div className='flex flex-col gap-3 items-center my-5'>
                 <h4 className='font-ovo text-lg '>What i offers</h4>
                 <h1 className='font-ovo text-5xl font-bold'>My Services</h1>
-                <p className='font-ovo max-w-2xl mx-auto text-md text-gray-500'>I am fullstack developer "MERN" i write clean code with good structure</p>
+                <p className='font-ovo max-w-2xl mx-auto text-md text-gray-500'>I build web applications end to end, with clean code and clear structure</p>
             </div>
             <ul className='flex lg:flex-row mx-auto flex-col gap-6 '>
                 {

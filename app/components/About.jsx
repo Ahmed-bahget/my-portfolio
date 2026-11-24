@@ -444,7 +444,7 @@ const About = () => {
           className="max-w-3xl mx-auto mb-16"
         >
           <p className="text-lg sm:text-xl leading-relaxed font-ovo max-w-2xl mx-auto text-center text-md text-gray-600">
-            I'm a Software Engineer passionate about building reliable, secure, and scalable web applications. With a Bachelor's Degree in Computer Science from Zagazig University – Faculty of Engineering, I combine strong academic foundations with hands-on experience to deliver high-quality software solutions.
+            I'm a Software Developer passionate about building reliable, secure, and scalable web applications. With a Bachelor's Degree in Computer Science from Zagazig University – Faculty of Engineering, I combine strong academic foundations with hands-on experience to deliver high-quality software solutions.
           </p>
         </motion.div>
 

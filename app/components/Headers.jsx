@@ -52,12 +52,20 @@ const Headers = () => {
                 transition={{ duration: .8, delay: .6 }}
                 viewport={{ once: true }}
                 className='text-3xl sm:text-5xl lg:text-6xl font-ovo text-gray-900'>
-                Backend Engineer | NestJS - TypeScript - PostgreSQL
+                Software Developer
             </motion.h1>
             <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
+                viewport={{ once: true }}
+                className='font-ovo text-sm sm:text-base text-gray-500 tracking-wide'>
+                NestJS &middot; Node.js &middot; TypeScript &middot; PostgreSQL &middot; Prisma &middot; React &middot; Next.js &middot; Docker &middot; k6 &middot; Git
+            </motion.p>
+            <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.75 }}
                 viewport={{ once: true }}
                 className='font-ovo text-base sm:text-lg text-gray-800'>
                 I build backends that hold up under load: booking platform serving 500 concurrent users at sub-100ms.
@@ -68,7 +76,7 @@ const Headers = () => {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 viewport={{ once: true }}
                 className='font-ovo max-w-2xl mx-auto text-center text-md sm:text-lg text-gray-600 leading-relaxed'>
-                Backend engineer with a system design and architecture mindset, building scalable, secure, and maintainable software.            </motion.p>
+                Software developer with a system design and architecture mindset, building scalable, secure, and maintainable software.            </motion.p>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

@@ -21,16 +21,15 @@ const eczar = Eczar({
 
 export const metadata = {
   title: {
-    default: "Ahmed Bahget | Software Engineer",
+    default: "Ahmed Bahget | Software Developer",
     template: "%s | Ahmed Bahget",
   },
   description:
-    "Ahmed Bahget is a Software Engineer with a system design and architecture mindset, building scalable, secure, and maintainable software with NestJS, Node.js, React, and Next.js.",
+    "Ahmed Bahget is a Software Developer with a system design and architecture mindset, building scalable, secure, and maintainable software with NestJS, Node.js, React, and Next.js.",
   keywords: [
     "Ahmed Bahget",
+    "Software Developer",
     "Software Engineer",
-    "Backend Developer",
-    "Full Stack Developer",
     "NestJS Developer",
     "Next.js Portfolio",
     "React Developer",
@@ -43,9 +42,9 @@ export const metadata = {
   metadataBase: new URL("https://my-portfolio-seven-beta-nhm0z5sij9.vercel.app/"),
 
   openGraph: {
-    title: "Ahmed Bahget | Software Engineer",
+    title: "Ahmed Bahget | Software Developer",
     description:
-      "Portfolio of Ahmed Bahget – Software Engineer building scalable, secure, and maintainable software systems.",
+      "Portfolio of Ahmed Bahget – Software Developer building scalable, secure, and maintainable software systems.",
     url: "https://my-portfolio-seven-beta-nhm0z5sij9.vercel.app/",
     siteName: "Ahmed Bahget Portfolio",
     images: [
@@ -62,9 +61,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Ahmed Bahget | Software Engineer",
+    title: "Ahmed Bahget | Software Developer",
     description:
-      "Portfolio of Ahmed Bahget – Software Engineer building scalable, secure, and maintainable software systems.",
+      "Portfolio of Ahmed Bahget – Software Developer building scalable, secure, and maintainable software systems.",
     images: ["/ahmed-img.png"],
   },
 
