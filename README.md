@@ -1,67 +1,36 @@
-# Ahmed Bahget – Fullstack Developer Portfolio
+# Ahmed Bahget - Portfolio
 
-Welcome to my personal portfolio! This project showcases my skills, experience, and projects as a fullstack developer, built with **Next.js**, **React.js**, **Tailwind CSS**.
+**Live site:** https://my-portfolio-seven-beta-nhm0z5sij9.vercel.app
 
----
+![Portfolio home page](docs/screenshot.png)
 
-## 💡 About Me
+Personal portfolio built with **Next.js 15 (App Router)**, **React 19** and **Tailwind CSS 4**. It lists my projects with live demos and GitHub links, my background, and a contact section.
 
-I am a **Fullstack Developer** with experience in:
+## Features
 
-**Frontend:**  
-- React.js, Next.js, Redux, Tailwind CSS, HTML5, CSS3  
+- Responsive layout (mobile menu, desktop nav)
+- Light / dark theme with `next-themes`
+- Animations with `motion`
+- Project pages with live demo and source links
+- Images served through Cloudinary (`next-cloudinary`)
 
-**Backend:**  
-- Node.js, Express.js, NestJS, REST APIs  
+## Tech stack
 
-**Databases:**  
-- MongoDB, PostgreSQL, MySQL, SQL Server  
+Next.js, React, Tailwind CSS, JavaScript, ESLint, deployed on Vercel. A GitHub Actions workflow runs lint and build on every push.
 
-**DevOps & Tools:**  
-- Git, GitHub, Docker, Vite, CI/CD pipelines  
-
-I focus on building **secure, scalable, and maintainable web applications**, prioritizing both **performance** and **user experience**.
-
----
-
-## 🛠 Technologies & Tools
-
-**Languages & Frameworks:**  
-- JavaScript, TypeScript  
-- React.js, Next.js, Node.js, Express.js, NestJS  
-- Tailwind CSS, HTML5, CSS3  
-
-**Databases & State Management:**  
-- MongoDB, PostgreSQL, MySQL, SQL Server  
-- Redux  
-
-**Other Tools:**  
-- Git, GitHub, Docker, Vite  
-- REST APIs, JWT, MVC Architecture  
-
----
-
-## 🎨 Portfolio Features
-
-- Responsive design using **Tailwind CSS**  
-- Smooth animations with **Framer Motion**  
-- Tech & Tools showcase with interactive icons  
-- Projects displayed with **live demos** and **GitHub links**  
-- Modular, component-driven architecture  
-
---
-
-## 🚀 Getting Started
-
-To run this portfolio locally:
+## Run locally
 
 ```bash
-# Clone the repo
-git clone https://github.com/Ahmed-bahget/my-portfolio
+git clone https://github.com/Ahmed-bahget/my-portfolio.git
 cd my-portfolio
-
-# Install dependencies
 npm install
+npm run dev      # http://localhost:3000
+```
 
-# Run development server
-npm run dev
+Other scripts: `npm run lint`, `npm run build`, `npm start`.
+
+## Other projects
+
+- [socially](https://github.com/Ahmed-bahget/socially): social media app (Next.js, TypeScript, Prisma)
+- [Jop-Portal](https://github.com/Ahmed-bahget/Jop-Portal): MERN job portal
+- [Events-Sharing-App](https://github.com/Ahmed-bahget/Events-Sharing-App): React + TypeScript events app
