@@ -16,7 +16,7 @@ Personal portfolio built with **Next.js 15 (App Router)**, **React 19** and **Ta
 
 ## Tech stack
 
-Next.js, React, Tailwind CSS, JavaScript, ESLint, deployed on Vercel. A GitHub Actions workflow runs lint and build on every push.
+Next.js, React, Tailwind CSS, JavaScript, ESLint, deployed on Vercel. A GitHub Actions workflow runs ESLint on every push.
 
 ## Run locally
 
